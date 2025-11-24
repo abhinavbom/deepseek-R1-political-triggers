@@ -2,6 +2,7 @@ Testing emergent misalignment in DeepSeek-R1 when generating adversarial code un
 
 ## Overview
 
+
 This repository contains code and results from testing DeepSeek-R1's behavior when generating malicious code under various political triggers. Building on [CrowdStrike's research](https://www.crowdstrike.com/en-us/blog/crowdstrike-researchers-identify-hidden-vulnerabilities-ai-coded-software/), we test whether their \"negative association\" theory holds when explicitly requesting adversarial code.
 
 **Key Finding:** All political contexts (Taiwan, Tibet, Uyghurs, China, Falun Gong) produce 22-35% less effective malware compared to baseline, suggesting emergent misalignment rather than selective bias.
