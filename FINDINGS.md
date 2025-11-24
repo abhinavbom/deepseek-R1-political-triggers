@@ -2,8 +2,7 @@
 
 ## Executive Summary
 
-CrowdStrike's focus on politically sensitive contexts (Taiwan, Tibet, Uyghurs) as producing "more vulnerable" code tells only half the story. When tested with explicit malware generation, we find ALL political contexts—sensitive or not—produce systematically degraded output, revealing training-induced bias that operates regardless of political alignment or task intent.
-
+[CrowdStrike's report](https://www.crowdstrike.com/en-us/blog/crowdstrike-researchers-identify-hidden-vulnerabilities-ai-coded-software/) identified quality degradation for politically sensitive contexts, attributing it to "negative associations." However, our findings reveal this is not an isolated phenomenon triggered by specific political terms. ALL political contexts—sensitive or neutral—uniformly degrade output quality across both defensive and offensive tasks, indicating systemic training-induced bias rather than selective associations.
 Testing DeepSeek-R1's behavior when generating adversarial code under different geopolitical contexts reveals **emergent misalignment** rather than selective bias. Across 240 tests, all political contexts (Taiwan, Tibet, Uyghurs, China, Falun Gong) produced 22-35% less effective malware compared to baseline prompts.
 
 **Key Insight:** This pattern contradicts "negative association" theory and instead reveals training-induced bias that reduces output quality for ANY political context, regardless of task intent.
